@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Email</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Email-style.css" />
+    <link rel="icon" href="" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"/>
+  </head>
+
+  <style>
+	* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  font-family: "Inter", Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+._countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+}
+
+.header__countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 40.5px;
+}
+
+.header__logo img {
+  width: 205px;
+  height: 50px;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__item img {
+  width: 20px;
+  height: 20px;
+}
+.header__item span {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #176bb2;
+}
+
+.main {
+  flex: 1 1 auto;
+  background: #fff;
+}
+
+.section-main_countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+  padding: 0px 10px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.section-main__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 580px;
+  width: 100%;
+  height: 200px;
+  padding: 25px 19px;
+  border-radius: 20px;
+  background: rgb(23, 107, 178) url("./img/main-img.png") 306px 50% no-repeat;
+  margin-bottom: 40px;
+}
+
+.section-main__block-text {
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-main__title {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0.015em;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.section-main__text1 {
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #176bb2;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-main__border-bottom {
+  height: 1.74px;
+  border-radius: 19.59px;
+  background: rgb(197, 198, 198);
+  margin-bottom: 13px;
+}
+
+.section-main__text2 {
+  font-family: "Inter";
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1.5%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section-robot__countainer {
+}
+
+.section-robot__body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.section-robot__blockTitle-robot {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.blockTitle-robot__title {
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #176bb2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 19px;
+}
+
+.blockTitle-robot__block-column {
+  display: grid;
+  grid-template-areas: "a a";
+  justify-content: center;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 8px;
+}
+
+.blockTitle-robot__column {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.blockTitle-robot__icon {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid rgb(4, 50, 107);
+}
+.blockTitle-robot__icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.blockTitle-robot__text {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.section-robot__blockColumn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockColumn-robot__column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blockColumn-robot__item-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 135px;
+  height: 50px;
+  padding: 3px 4px 3px 12px;
+  border-radius: 10px 30px 30px 10px;
+  background: rgba(19, 156, 253, 0.18);
+}
+
+.blockColumn-robot__item-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 135px;
+  height: 50px;
+  padding: 3px 12px 3px 4px;
+  border-radius: 30px 10px 10px 30px;
+  background: rgba(19, 156, 253, 0.18);
+}
+
+.blockColumn-robot__column-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.blockColumn-robot__title {
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11.5px;
+  letter-spacing: 0em;
+  color: #000;
+  text-align: center;
+}
+
+.blockColumn-robot__text {
+  font-family: Arial;
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 8px;
+  letter-spacing: 0em;
+  color: #000;
+  text-align: center;
+}
+
+.blockColumn-robot__icon-background {
+  padding: 4.5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.blockColumn-robot__icon {
+  padding: 5.5px;
+  background-color: #176bb2;
+  box-shadow: 0.97px 0.97px 3.89px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+}
+.blockColumn-robot__icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.blockColumn-robot__column-imgCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 45px;
+  background: url("./img/circle.svg") center top no-repeat;
+  background-size: 80%;
+}
+
+.blockColumn-robot__imgCenter img {
+  width: 253.5px;
+  height: 100%;
+}
+
+.blockColumn-robot__column-textDown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 5px;
+  border-radius: 3.5px;
+  background: rgb(235, 235, 235);
+}
+
+.blockColumn-robot__red-triangle img {
+  width: 15px;
+  height: 100%;
+}
+
+.blockColumn-robot__textDown {
+  font-family: Arial;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #000;
+  font-size: 7px;
+  line-height: 7px;
+}
+.blockColumn-robot__textDown span {
+  font-weight: 700;
+}
+
+.section-info__countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.section-info__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section-info__block-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.section-info__check-mark {
+  padding: 2px;
+  border: 1px solid rgb(23, 107, 178);
+  border-radius: 50%;
+}
+.section-info__check-mark img {
+  width: 14px;
+  height: 13px;
+}
+
+.section-info__title {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-info__column-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-info__column-text img {
+  width: 200px;
+  height: 100%;
+}
+
+.section-info__text {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 13px;
+  color: #191919;
+  text-wrap: balance;
+}
+.section-info__text span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-video-countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.section-video__body {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.section-video__block-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.section-video__check-mark {
+  padding: 2px;
+  border: 1px solid rgb(23, 107, 178);
+  border-radius: 50%;
+}
+.section-video__check-mark img {
+  width: 14px;
+  height: 13px;
+}
+
+.section-video__title {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-video__block-column {
+  display: grid;
+  grid-template-areas: "a a";
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.section-video__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  text-align: center;
+}
+
+.section-video__item-img {
+  position: relative;
+}
+
+.section-video__img {
+  border-radius: 21px;
+}
+.section-video__img img {
+  width: 254px;
+  height: 100%;
+}
+
+.section-video__play {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 38px;
+  height: 26px;
+}
+
+.section-video__text {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.section-company__countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.section-company__body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.section-company__block-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.section-company__check-mark {
+  padding: 2px;
+  border: 1px solid rgb(23, 107, 178);
+  border-radius: 50%;
+}
+.section-company__check-mark img {
+  width: 14px;
+  height: 13px;
+}
+
+.section-company__title {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.section-company__block-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-company__column {
+  display: flex;
+  align-items: flex-end;
+}
+.section-company__column:nth-child(1) {
+  gap: 19px;
+}
+.section-company__column:nth-child(2) {
+  gap: 12px;
+}
+.section-company__column:nth-child(3) {
+  gap: 21px;
+}
+
+.section-company__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-automation__countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.section-automation__body {
+  margin-bottom: 40px;
+}
+
+.section-automation__block-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.section-automation__check-mark {
+  padding: 2px;
+  border: 1px solid rgb(23, 107, 178);
+  border-radius: 50%;
+}
+.section-automation__check-mark img {
+  width: 14px;
+  height: 13px;
+}
+
+.section-automation__title {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.section-automation__icon-title {
+  padding: 2px;
+  border: 1px solid rgb(23, 107, 178);
+  border-radius: 50%;
+}
+.section-automation__icon-title img {
+  width: 14px;
+  height: 13px;
+}
+
+.section-automation__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+.section-automation__item-img {
+  position: relative;
+  width: 100%;
+}
+
+.section-automation__img {
+  position: absolute;
+}
+.section-automation__img:nth-child(1) {
+  z-index: 2;
+  bottom: -20px;
+  left: 8px;
+}
+.section-automation__img:nth-child(1) img {
+  width: 138px;
+  height: 73px;
+}
+.section-automation__img:nth-child(2) {
+  top: -15px;
+  right: 0;
+}
+.section-automation__img:nth-child(2) img {
+  width: 100px;
+  height: 76px;
+}
+
+.section-automation__text {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1%;
+}
+
+.section-automation__column1 {
+  display: grid;
+  grid-template-areas: "a a";
+  justify-content: space-between;
+  -moz-column-gap: 17px;
+  column-gap: 17px;
+  row-gap: 13px;
+  margin-bottom: 40px;
+}
+
+.section-automation__item1 {
+  display: flex;
+  align-items: center;
+}
+
+.section-automation__column-icon {
+  display: flex;
+  align-items: center;
+}
+.section-automation__column-icon::after {
+  content: "";
+  background-color: #1a1a18;
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  margin: 0px 10px;
+}
+
+.section-automation__icon {
+  padding: 5px;
+  border: 1px solid #176bb2;
+  border-radius: 50%;
+}
+.section-automation__icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.section-automation__text-column1 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+}
+
+.section-automation__column2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.section-automation__item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 166px;
+  height: 117px;
+  box-sizing: border-box;
+  border: 0.2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background: rgba(19, 156, 253, 0.18);
+}
+
+.section-automation__icon2 {
+  border-bottom: 1.5px solid #1a1a18;
+  padding-bottom: 14px;
+  margin-bottom: 19px;
+}
+.section-automation__icon2 img {
+  width: 35px;
+  height: 35px;
+}
+
+.section-automation__text2 {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+.footer__countainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+  padding: 0px 10px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 44px;
+  background-color: #313234;
+  border-radius: 10px;
+}
+
+.footer__block-up {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer__text {
+  width: 280px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.footer__column-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__item {
+  display: flex;
+  gap: 15px;
+}
+.footer__item img {
+  width: 18px;
+  height: 18px;
+}
+.footer__item a {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #fff;
+  line-height: 18px;
+}
+
+.footer__item-icon {
+  display: flex;
+  gap: 10px;
+}
+.footer__item-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__text-down {
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0em;
+  color: #000;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #fff;
+  text-align: center;
+}
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__countainer _countainer">
+          <div class="header__body">
+            <div class="header__logo">
+              <img src="./css/img/header-logo.svg" alt="Header-Logo" />
+            </div>
+            <nav class="header__navigation">
+              <ul class="header__list">
+                <li class="header__item">
+                  <img src="./css/img/icon-phone.svg" alt="icon-phone" />
+                  <span href="#">+7 (495) 215-15-16</span>
+                </li>
+                <li class="header__item">
+                  <img src="./css/img/icon-planet.svg" alt="icon-planet" />
+                  <span href="#">proenergo.ru</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section-main">
+          <div class="section-main_countainer">
+            <div class="section-main__body">
+              <div class="section-main__block-text">
+                <h1 class="section-main__title">дефицит кадров</h1>
+                <h2 class="section-main__text1">на участках погрузки?</h2>
+                <img src="./css/img/Vector.svg" alt="Vector" />
+                <h2 class="section-main__text2">решение есть!</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-robot">
+          <div class="section-robot__countainer _countainer">
+            <div class="section-robot__body">
+              <div class="section-robot__blockTitle-robot blockTitle-robot">
+                <h2 class="blockTitle-robot__title">
+                  представляем робот-паллетайзер
+                </h2>
+                <div class="blockTitle-robot__block-column">
+                  <div class="blockTitle-robot__column">
+                    <div class="blockTitle-robot__icon">
+                      <img src="./css/img/check-mark.svg" alt="check-mark" />
+                    </div>
+                    <p class="blockTitle-robot__text">
+                      Решает проблему дефицита кадров
+                    </p>
+                  </div>
+                  <div class="blockTitle-robot__column">
+                    <div class="blockTitle-robot__icon">
+                      <img src="./css/img/check-mark.svg" alt="check-mark" />
+                    </div>
+                    <p class="blockTitle-robot__text">
+                      Придает производству гибкость
+                    </p>
+                  </div>
+                  <div class="blockTitle-robot__column">
+                    <div class="blockTitle-robot__icon">
+                      <img src="./css/img/check-mark.svg" alt="check-mark" />
+                    </div>
+                    <p class="blockTitle-robot__text">
+                      Увеличивает производительность
+                    </p>
+                  </div>
+                  <div class="blockTitle-robot__column">
+                    <div class="blockTitle-robot__icon">
+                      <img src="./css/img/check-mark.svg" alt="check-mark" />
+                    </div>
+                    <p class="blockTitle-robot__text">
+                      Безопасен для персонала
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="section-robot__blockColumn blockColumn-robot">
+                <div class="blockColumn-robot__column">
+                  <div class="blockColumn-robot__item-left">
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">до 2 лет</div>
+                      <span class="blockColumn-robot__text">
+                        возврат инвестиций
+                      </span>
+                    </div>
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon1.svg"
+                          alt="sectionRobot-Icon1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-left">
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">до 18 кг</div>
+                      <span class="blockColumn-robot__text">
+                        грузоподъемность
+                      </span>
+                    </div>
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon2.svg"
+                          alt="sectionRobot-Icon2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-left">
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">до 9 циклов</div>
+                      <span class="blockColumn-robot__text">в минуту</span>
+                    </div>
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon3.svg"
+                          alt="sectionRobot-Icon3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-left">
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">
+                        разные <br />
+                        схемы <br />
+                        укладки
+                      </div>
+                      <span class="blockColumn-robot__text"
+                        >для разных продуктов</span
+                      >
+                    </div>
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon4.svg"
+                          alt="sectionRobot-Icon4"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blockColumn-robot__column-imgCenter">
+                  <div class="blockColumn-robot__imgCenter">
+                    <img src="./css/img/Rectangle.svg" alt="img-center" />
+                  </div>
+                  <div class="blockColumn-robot__column-textDown">
+                    <div class="blockColumn-robot__red-triangle">
+                      <img src="./css/img/red-triangle.svg" alt="red-triangle" />
+                    </div>
+                    <p class="blockColumn-robot__textDown">
+                      Средний срок окупаемости ячейки составляет
+                      <span>до 2 лет</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="blockColumn-robot__column">
+                  <div class="blockColumn-robot__item-right">
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon5.svg"
+                          alt="sectionRobot-Icon5"
+                        />
+                      </div>
+                    </div>
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">до 2400 мм</div>
+                      <span class="blockColumn-robot__text">
+                        высота паллеты
+                      </span>
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-right">
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon6.svg"
+                          alt="sectionRobot-Icon6"
+                        />
+                      </div>
+                    </div>
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">
+                        220 В, до 1 кВт
+                      </div>
+                      <span class="blockColumn-robot__text">
+                        энергопотребление
+                      </span>
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-right">
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon7.svg"
+                          alt="sectionRobot-Icon7"
+                        />
+                      </div>
+                    </div>
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">
+                        групповая укладка
+                      </div>
+                      <span class="blockColumn-robot__text"
+                        >для повышения производительности</span
+                      >
+                    </div>
+                  </div>
+                  <div class="blockColumn-robot__item-right">
+                    <div class="blockColumn-robot__icon-background">
+                      <div class="blockColumn-robot__icon">
+                        <img
+                          src="./css/img/sectionRobot-Icon8.svg"
+                          alt="sectionRobot-Icon8"
+                        />
+                      </div>
+                    </div>
+                    <div class="blockColumn-robot__column-text">
+                      <div class="blockColumn-robot__title">
+                        укладка картонных прослоек
+                      </div>
+                      <span class="blockColumn-robot__text"
+                        >по заданной программе</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-info">
+          <div class="section-info__countainer">
+            <div class="section-info__body">
+              <div class="section-info__block-title">
+                <div class="section-info__check-mark">
+                  <img src="./css/img/checkMark-blue.svg" alt="cover" />
+                </div>
+                <h3 class="section-info__title">
+                  построен на базе коллаборативного робота PROMPOWER <br />
+                  R-серии
+                </h3>
+              </div>
+              <div class="section-info__block-text">
+                <p class="section-info__text">
+                  <span>PROMPOWER</span> производит безопасных роботов,
+                  выполняющих широкий спектр задач. Они характеризуются удобным
+                  и многофункциональным ПО, высокой надежностью, отличными
+                  возможностями для интеграции в производство и возможностью
+                  работать 24/7. Именно это выделяет коботов этого бренда на
+                  фоне других.
+                </p>
+                <div class="section-info__column-text">
+                  <p class="section-info__text">
+                    Имеют модульную конструкцию с 6-ю степенями свободы и
+                    оснащены инновационными серводвигателями, гарантирующими
+                    высокую эффективность. Имеют универсальный фланец,
+                    соответствующий стандарту ISO 9409-1-50-4-M6, который
+                    позволяет быстро и легко изменять функциональность робота.
+                  </p>
+                  <img src="./css/img/sectionInfo-img.jpg" alt="sectionInfo-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-video">
+          <div class="section-video-countainer">
+            <div class="section-video__body">
+              <div class="section-video__block-title">
+                <div class="section-video__check-mark">
+                  <img src="./css/img/checkMark-blue.svg" alt="cover" />
+                </div>
+                <h3 class="section-video__title">Примеры наших решений:</h3>
+              </div>
+              <div class="section-video__block-column">
+                <div class="section-video__column">
+                  <div class="section-video__item-img">
+                    <div class="section-video__img">
+                      <img src="./css/img/Video1.jpg" alt="Video1" />
+                    </div>
+                    <img
+                      class="section-video__play"
+                      src="./css/img/blue-button.svg"
+                      alt="blue-button"
+                    />
+                  </div>
+                  <p class="section-video__text">
+                    Паллетизация коробов с послойной укладкой картонного листа
+                  </p>
+                </div>
+                <div class="section-video__column">
+                  <div class="section-video__item-img">
+                    <div class="section-video__img">
+                      <img src="./css/img/Video2.jpg" alt="Video2" />
+                    </div>
+                    <img
+                      class="section-video__play"
+                      src="./css/img/blue-button.svg"
+                      alt="blue-button"
+                    />
+                  </div>
+                  <p class="section-video__text">
+                    Паллетизация лотков с готовой продукцией на две паллеты
+                  </p>
+                </div>
+                <div class="section-video__column">
+                  <div class="section-video__item-img">
+                    <div class="section-video__img">
+                      <img src="./css/img/Video3.jpg" alt="Video3" />
+                    </div>
+                    <img
+                      class="section-video__play"
+                      src="./css/img/blue-button.svg"
+                      alt="blue-button"
+                    />
+                  </div>
+                  <p class="section-video__text">
+                    Укладка готовой продукции на паллеты
+                  </p>
+                </div>
+                <div class="section-video__column">
+                  <div class="section-video__item-img">
+                    <div class="section-video__img">
+                      <img src="./css/img/Video4.jpg" alt="Video4" />
+                    </div>
+                    <img
+                      class="section-video__play"
+                      src="./css/img/blue-button.svg"
+                      alt="blue-button"
+                    />
+                  </div>
+                  <p class="section-video__text">
+                    Коллаборативный робот на участке паллетизации готовой
+                    продукции в ведрах
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-company">
+          <div class="section-company__countainer">
+            <div class="section-company__body">
+              <div class="section-company__block-title">
+                <div class="section-company__check-mark">
+                  <img src="./css/img/checkMark-blue.svg" alt="checkMark-blue" />
+                </div>
+                <h3 class="section-company__title">
+                  Компании, успешно использующие решения на базе наших
+                  коллаборативных роботов:
+                </h3>
+              </div>
+              <div class="section-company__block-column">
+                <div class="section-company__column">
+                  <div class="section-company__item">
+                    <img src="./css/img/company1.jpg" alt="company1" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company2.jpg" alt="company2" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company3.jpg" alt="company3" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company4.jpg" alt="company4" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company5.jpg" alt="company5" />
+                  </div>
+                </div>
+                <div class="section-company__column">
+                  <div class="section-company__item">
+                    <img src="./css/img/company6.jpg" alt="company6" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company7.jpg" alt="company7" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company8.jpg" alt="company8" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company9.jpg" alt="company9" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company10.jpg" alt="company10" />
+                  </div>
+                </div>
+                <div class="section-company__column">
+                  <div class="section-company__item">
+                    <img src="./css/img/company11.jpg" alt="company11" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company12.jpg" alt="company12" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company13.jpg" alt="company13" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company14.jpg" alt="company14" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company15.jpg" alt="company15" />
+                  </div>
+				  <div class="section-company__item">
+                    <img src="./css/img/company16.jpg" alt="company16" />
+                  </div>
+                  <div class="section-company__item">
+                    <img src="./css/img/company17.jpg" alt="company17" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+		<section class="section-automation">
+			<div class="section-automation__countainer">
+				<div class="section-automation__body">
+					<div class="section-automation__block-title">
+						<div class="section-automation__check-mark">
+						  <img src="./css/img/checkMark-blue.svg" alt="checkMark-blue" />
+						</div>
+						<h3 class="section-automation__title">
+							промэнерго автоматика
+						</h3>
+						<div class="section-automation__icon-title">
+							<img src="./css/img/sectionAutomation-icon.svg" alt="sectionAutomation-icon">
+						</div>
+					</div>
+					<div class="section-automation__block-column">
+						<div class="section-automation__column">
+							<div class="section-automation__item-img">
+								<div class="section-automation__img">
+									<img src="./css/img/sectionAutomation-img1.png" alt="sectionAutomation-img1">
+								</div>
+								<div class="section-automation__img">
+									<img src="./css/img/sectionAutomation-img2.png" alt="sectionAutomation-img2">
+								</div>
+							</div>
+							<p class="section-automation__text">Инжиниринговая компания в сфере автоматизации и робототизации производственных процессов</p>
+						</div>
+						<div class="section-automation__column1">
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon1.svg" alt="sectionAutomation-icon1">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">60+ реализованных проектов с коллаборативными роботами за последние 3 года</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon5.svg" alt="sectionAutomation-icon5">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">PROMPOWER официальный дистрибьютор</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon2.svg" alt="sectionAutomation-icon2">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">300+ собственный логисти-ческий центр со складом с более чем 300000 позиций</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon6.svg" alt="sectionAutomation-icon6">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">70+ сотрудников (более 30 технических специалистов)</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon3.svg" alt="sectionAutomation-icon3">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">B TOP 5 дистрибьютеров по коботам в Восточной Европе</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon7.svg" alt="sectionAutomation-icon7">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">22 года на рынке промыш-ленной автоматизации</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon4.svg" alt="sectionAutomation-icon4">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">№1 дистрибьютеров по коботов в РФ по итогам 2021 года</p>
+							</div>
+							<div class="section-automation__item1">
+								<div class="section-automation__column-icon">
+									<div class="section-automation__icon">
+										<img src="./css/img/sectionAutomation-icon8.svg" alt="sectionAutomation-icon8">
+									</div>
+								</div>
+								<p class="section-automation__text-column1">150+ установленный совместно с партнерами-интеграторами роботов</p>
+							</div>
+						</div>
+						<div class="section-automation__column2">
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.1.svg" alt="sectionAutomation-icon2.1">
+								</div>
+								<p class="section-automation__text2">Выездные демонстрации</p>
+							</div>
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.2.svg" alt="sectionAutomation-icon2.2">
+								</div>
+								<p class="section-automation__text2">Удаленная и выездная поддержка</p>
+							</div>
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.3.svg" alt="sectionAutomation-icon2.3">
+								</div>
+								<p class="section-automation__text2">Собственный склад и быстрая доставка</p>
+							</div>
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.4.svg" alt="sectionAutomation-icon2.4">
+								</div>
+								<p class="section-automation__text2">Гарантийный и постгарантийный сервис</p>
+							</div>
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.5.svg" alt="sectionAutomation-icon2.5">
+								</div>
+								<p class="section-automation__text2">Обучение в специализированном учебном классе</p>
+							</div>
+							<div class="section-automation__item2">
+								<div class="section-automation__icon2">
+									<img src="./css/img/sectionAutomation-icon2.6.svg" alt="sectionAutomation-icon2.6">
+								</div>
+								<p class="section-automation__text2">Обучение на предприятии</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+      </main>
+
+      <footer class="footer">
+		<div class="footer__countainer">
+			<div class="footer__body">
+				<div class="footer__block-up">
+					<p class="footer__text">г. Москва, <br> Средняя Калитниковская ул., д. 26/27, бизнес-центр «РТС Таганский»</p>
+					<div class="footer__column-contact">
+						<div class="footer__item">
+							<img src="./css/img/footer-icon1.svg" alt="footer-icon1">
+							<a href="#">+7 (495) 215-15-16</a>
+						</div>
+						<div class="footer__item">
+							<img src="./css/img/footer-icon2.svg" alt="footer-icon2">
+							<a href="#">proenergo.ru</a>
+						</div>
+						<div class="footer__item-icon">
+							<img src="./css/img/footer-icon3.svg" alt="footer-icon3">
+							<img src="./css/img/footer-icon4.svg" alt="footer-icon4">
+							<img src="./css/img/footer-icon5.svg" alt="footer-icon5">
+						</div>
+					</div>
+				</div>
+				<div class="footer__block-down">
+					<p class="footer__text-down">Не отвечайте на данное письмо. Оно является автоматический рассылкой. Вы получили это письмо, так как подписались на новости компании Промэнерго Автоматика.</p>
+				</div>
+			</div>
+		</div>
+	  </footer>
+    </div>
+  </body>
+</html>
